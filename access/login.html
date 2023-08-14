@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./theme_icons/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <title>Login</title>
+</head>
+<body>
+    <header id="head">
+        <div class="head__container">
+            <div class="head__greeting-list row grid wide">
+                <div class="head__greeting-items c-4">
+                    <span class="greeting-items-icon"><i class="fa-solid fa-check"></i></span>
+                    <p class="greeting-items-text">Prices with many attractive offers when buying</p>
+                </div>
+
+                <div class="head__greeting-items c-4">
+                    <span class="greeting-items-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                    <p class="greeting-items-text">Free nationwide ship & fast delivery</p>
+                </div>
+
+                <div class="head__greeting-items c-4">
+                    <span class="greeting-items-icon"><i class="fa-solid fa-star"></i></span>
+                    <p class="greeting-items-text">Wide range of products that meet approved standards.</p>
+                </div>
+            </div>
+            <div class="head__box-bg">
+                <div class="head__box grid wide">
+                    <div class="nav__box">
+                        <div class="nav__list-title">
+                            <span class="nav__list-open" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+                            <h2 class="nav__list-text">menu</h2>
+                        </div>
+                        <ul class="nav__list">
+                            <li><span class="nav__list-icons"><i class="fa-solid fa-gear"></i></span><a href="" class="nav__list-link">vegetable - fruit</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-solid fa-heart"></i></span><a href="" class="nav__list-link">meat - seafood</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-solid fa-circle-plus"></i></span><a href="" class="nav__list-link">egg</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-solid fa-bowl-rice"></i></span><a href="" class="nav__list-link">rice</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-sharp fa-solid fa-leaf"></i></span><a href="" class="nav__list-link">fruit</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-sharp fa-solid fa-shrimp"></i></span><a href="" class="nav__list-link">seafood</a></li>
+                        </ul>
+                    </div>
+                    <div class="head__left-box">
+                        <div class="head__logo">
+                            <a href="./index.html" class="head__logo-link">
+                                <img src="./imgs/header-logo.png" alt="Mini Mart"  class="head__logo-img">
+                            </a>
+                        </div>
+                        <div class="head__input">
+                            <input type="text" class="head__input-search" placeholder="Search...">
+                            <span class="head__search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+    
+                    <div class="head__right-box">
+                        <div class="right__country-box">
+                            <div class="right__country-img-box">
+                                <img src="./imgs/viet-nam-flag-vi.jpg" alt="Vietnam" class="right__country-img">
+                            </div>
+
+                            <a href="#" class="right__country-text">Vietnam</a>
+                            <span class="right__country-icon"><i class="fa-solid fa-caret-down"></i></span>
+                            <div class="right__country-sub-box">
+                                <div class="right__country-sub-el">
+                                    <img src="./imgs/english-flag-en.jpg" alt="English" class="right__country-img-el">
+                                </div>
+                                <a href="#" class="right__country-sub-text">English</a>
+                            </div>
+                        </div>
+    
+                        <div class="right__login-box">
+                            <span class="right__login-user"><i class="fa-solid fa-user"></i></span>
+                            <div class="right__login-sub-box">
+                                <a href="#" class="right__login-login">Login</a>
+                                <a href="./register.html" class="right__login-login">Register</a>
+                            </div>
+                        </div>
+    
+                        <div class="right__cart-box">
+                            <span class="right__cart-icon"><i class="fa-sharp fa-solid fa-bag-shopping"></i></span>
+                            <a href="#" class="right__cart-text">Cart (0)</a>
+
+                            <div class="right__cart-list-item">
+                                <p class="right__cart-item">There are no products in the cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="content__top-container">
+        <div class="content__top-box grid wide">
+            <div class="content__top-wrap">
+                <a href="./index.html" class="content__top-home">home</a>
+                <p class="content__products-login">login</p>
+            </div>
+
+            <h3 class="content__title-login">login</h3>
+
+            <form class="content__form-2" action="" target="_self">
+                <label for="userName">User name:</label>
+                <input id="userName" name="userName" required type="text" class="content__input-log" placeholder="User name or email"> <br>
+               
+                <label for="password">Password:</label>
+                <input id="password" name="password" required type="password" class="content__input-log" placeholder="Password">
+                <button class="content__btn-2" type="submit">login<span><i class="fa-solid fa-right-to-bracket"></i></span></button>
+                <h4 class="content__or-2">OR</h4>
+                <a target="_blank" href="https://www.facebook.com/login/device-based/regular/login/" class="content__btn-facebook"><i class="ti-facebook"></i>Login in facebook</a>
+                <a target="_blank" href="https://accounts.google.com/v3/signin/identifier?dsh=S922993970%3A1686815000658269&ffgf=1&hl=JA&ifkv=Af_xneFMTThg1HIW5zKBXWP_52I1bo_luj1Oeh1lKKWSQqdqygacGsUEH-cSEtc1JS5a7jELAX7QGA&flowName=GlifWebSignIn&flowEntry=ServiceLogin" 
+                class="content__btn-google"><i class="ti-google"></i>Login in google</a>
+
+                <div class="content__sub-box">
+                    <a href="./register.html" class="content__register-link">Register</a>
+                    <a href="" class="content__forgotPass-link">Forgot password</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <!-- <div class="footer__advice-wrapper grid wide">
+            <h1 class="footer__advice-tips">Useful tips</h1>
+            <div class="footer__advice-list">
+                <div class="footer__advice-item">
+                    <div class="footer__advice-img"><img src="./imgs/sale-paner.jpg" alt=""></div>
+                    <div class="footer__advice-text-box">
+                        <a href="" class="footer__advice-title">Super hot promotion - Supper Cheap</a>
+                        <p class="footer__advice-text">A big and interesting surprise, an extremely attractive and super terrible promotion for the first time...</p>
+                    </div>
+                </div>
+
+                <div class="footer__advice-item">
+                    <div class="footer__advice-img"><img src="./imgs/nau_an_ngon.jpg" alt=""></div>
+                    <div class="footer__advice-text-box">
+                        <a href="" class="footer__advice-title">Cook better with clean food</a>
+                        <p class="footer__advice-text">Eating is an eternal human affair. In the past, we just needed to eat well, now we need to eat well. Then there's the food problem...</p>
+                    </div>
+                </div>
+
+                <div class="footer__advice-item">
+                    <div class="footer__advice-img"><img src="./imgs/thuc_pham_sach.jpg" alt=""></div>
+                    <div class="footer__advice-text-box">
+                        <a href="" class="footer__advice-title">Choose clean food and cook it properly</a>
+                        <p class="footer__advice-text">Food is an essential human need for survival and development. Society is increasingly progressive, receiving...</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="footer__bg-img">
+            <div class="footer__wrapper grid wide">
+                <div class="footer__wrapper-sub">
+                    <div class="footer__infor-col-1 c-3">
+                        <div class="footer__infor-logo">
+                            <a alt="" href=""><img src="./imgs/logo_footer.jpg" alt=""></a>
+                        </div>
+                        <p class="footer__infor-logo-text">MiniMart supermarket provides super clean items that bring you health</p>
+                        <div class="footer__infor-logo-address">
+                            <span><i class="fa-solid fa-map-location"></i></span>
+                            <p>Tang 6 Ladeco, 266 Doi Can, Ha Noi</p>
+                        </div>
+                        <div class="footer__infor-logo-phone">
+                            <span><i class="fa-solid fa-phone-volume"></i></span>
+                            <a href="tel:+090 7155 5836">090 7155 5836</a>
+                        </div>
+                        <div class="footer__infor-logo-email">
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <a href="mailto:vuducthjnh2k@gmail.com">vuducthjnh2k@gmail.com</a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__infor-col-2 c-3">
+                        <h3 class="footer__infor-account">account</h3>
+                        <ul class="footer__infor-account-list">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Introduce</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__infor-col-2 c-3">
+                        <h3 class="footer__infor-account">Customer support</h3>
+                        <ul class="footer__infor-account-list">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Introduce</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__infor-col-4 c-3">
+                        <h3 class="footer__infor-send">send email</h3>
+                        <label for="sendEmail">Send email to receive promotion</label>
+                        <div class="footer__infor-input">
+                            <input type="text" id="sendEmail" name="sendEmail" placeholder="Your Email">
+                            <span><i class="fa-solid fa-paper-plane"></i></span>
+                        </div>
+                        <h4>Connection</h4>
+                        <div class="footer__infor-social">
+                            <span class="footer__social-google"><a href="https://www.google.com/"><i class="fa-brands fa-google-plus-g"></i></a></span>
+                            <span class="footer__social-twitter"><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></span>
+                            <span class="footer__social-facebook"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></span>
+                            <span class="footer__social-instagram"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="footer__last-text">© Copyright belongs to <span>Vu Thinh</span> | Provided by <span>Thinh</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/js.js"></script>
+
+</body>
+</html>

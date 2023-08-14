@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./theme_icons/themify-icons/themify-icons.css">
+    <link rel="icon" type="image/x-icon" href="https://st.quantrimang.com/photos/image/2021/09/05/Co-Vietnam.png">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <title>VietNam Mart</title>
+</head>
+<body>
+    <!-- HEAD -->
+    <header id="head">
+        <div class="head__container">
+            <div class="head__greeting-list row grid wide">
+                <div class="head__greeting-items c-4">
+                    <span class="greeting-items-icon"><i class="fa-solid fa-check"></i></span>
+                    <p class="greeting-items-text">Prices with many attractive offers when buying</p>
+                </div>
+
+                <div class="head__greeting-items c-4">
+                    <span class="greeting-items-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                    <p class="greeting-items-text">Free nationwide ship & fast delivery</p>
+                </div>
+
+                <div class="head__greeting-items c-4">
+                    <span class="greeting-items-icon"><i class="fa-solid fa-star"></i></span>
+                    <p class="greeting-items-text">Wide range of products that meet approved standards.</p>
+                </div>
+            </div>
+            <div class="head__box-bg">
+                <div class="head__box grid wide">
+                    <div class="nav__box">
+                        <div class="nav__list-title">
+                            <span class="nav__list-open" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+                            <h2 class="nav__list-text">menu</h2>
+                        </div>
+                        <ul class="nav__list">
+                            <li><span class="nav__list-icons"><i class="fa-solid fa-gear"></i></span><a href="./products_fruits.html" class="nav__list-link">vegetable - fruit</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-solid fa-heart"></i></span><a href="./meatSeafood.html" class="nav__list-link">meat - seafood</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-solid fa-circle-plus"></i></span><a href="./eggRice.html" class="nav__list-link">egg</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-solid fa-bowl-rice"></i></span><a href="./eggRice.html" class="nav__list-link">rice</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-sharp fa-solid fa-leaf"></i></span><a href="./products_fruits2.html" class="nav__list-link">fruit</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-sharp fa-solid fa-shrimp"></i></span><a href="./meatSeafood.html" class="nav__list-link">seafood</a></li>
+                        </ul>
+                    </div>
+                    <div class="head__left-box">
+                        <div class="head__logo">
+                            <a href="./index.html" class="head__logo-link">
+                                <img src="./imgs/header-logo.png" alt="Mini Mart"  class="head__logo-img">
+                            </a>
+                        </div>
+                        <div class="head__input">
+                            <input type="text" class="head__input-search" placeholder="Search...">
+                            <span class="head__search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+    
+                    <div class="head__right-box">
+                        <div class="right__country-box">
+                            <div class="right__country-img-box">
+                                <img src="./imgs/viet-nam-flag-vi.jpg" alt="Vietnam" class="right__country-img">
+                            </div>
+
+                            <a href="#" class="right__country-text">Vietnam</a>
+                            <span class="right__country-icon"><i class="fa-solid fa-caret-down"></i></span>
+                            <div class="right__country-sub-box">
+                                <div class="right__country-sub-el">
+                                    <img src="./imgs/english-flag-en.jpg" alt="English" class="right__country-img-el">
+                                </div>
+                                <a href="#" class="right__country-sub-text">English</a>
+                            </div>
+                        </div>
+    
+                        <div class="right__login-box">
+                            <span class="right__login-user"><i class="fa-solid fa-user"></i></span>
+                            <div class="right__login-sub-box">
+                                <a href="./login.html" class="right__login-login">Login</a>
+                                <a href="./register.html" class="right__login-login">Register</a>
+                            </div>
+                        </div>
+    
+                        <div class="right__cart-box">
+                            <span class="right__cart-icon"><i class="fa-sharp fa-solid fa-bag-shopping"></i></span>
+                            <a class="right__cart-text">Cart (0)</a>
+
+                            <div class="right__cart-list-item">
+                                <p class="right__cart-item">There are no products in the cart</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="head__mobile-nav">
+                        <span class="head__mobile-menu-icon"><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div id="content">
+        <div id="slider-wrapper">
+            <div class="slider-main fade">
+                <img src="./imgs/food-slider_5.jpg" alt="">
+                <img src="./imgs/food-slider_8.jpg" alt="">
+                <img src="./imgs/food-slider_6.jpg" alt="">
+            </div>
+            <span id="prev"><i class="fa-solid fa-angle-left"></i></span>
+            <span id="next"><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <!-- <div id="slider__box">
+            <img src="./imgs/food-slider_5.jpg" alt="" class="slider-img">
+            <span onclick="prev()" class="prev"><i class="fa-solid fa-angle-left"></i></span>
+            <span onclick="next()" class="next"><i class="fa-solid fa-angle-right"></i></span>
+        </div> -->
+          <div class="content__container grid wide">
+            <div class="content__head-content">
+                <div class="content__head-imgs c-4"><img src="./imgs/body_food-6.jpg" alt="" class="content__head-img"></div>
+                <div class="content__head-imgs c-4"><img src="./imgs/body_food-7.jpg" alt="" class="content__head-img"></div>
+                <div class="content__head-imgs c-4"><img src="./imgs/body_food-9.jpg" alt="" class="content__head-img"></div>
+            </div>
+            <div class="content__best-selling-box">
+                <h2 class="content__best-selling">Selling products</h2>
+                <div class="content__products-arrow">
+                    <span id="slider-left" class="content__arrow-prev"><i class="fa-solid fa-circle-left"></i></span>
+                    <span id="slider-right" class="content__arrow-next"><i class="fa-solid fa-circle-right"></i></span>
+                </div>
+            </div>
+            <div class="content__products-box">
+                <ul class="content__products-list">
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box sale-39">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food1.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Green asparagus</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">2.00 $</p>
+                                <p class="content__prime-price">4.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+                            <!-- <div class="content__add-cart-box"> -->
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span>  <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food5.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Seedless red watermelon</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">3.00 $</p>
+                                <p class="content__prime-price">6.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>
+
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box sale-36">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food2.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Newzealand green apple</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">8.00 $</p>
+                                <p class="content__prime-price">10.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                        
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food6.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Mint basil</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">12.00 $</p>
+                                <p class="content__prime-price">13.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>
+                    
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food3.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Spinach</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">5.00 $</p>
+                                <p class="content__prime-price">7.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                        
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food7.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Jute vegetables</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">4.00 $</p>
+                                <p class="content__prime-price">5.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>   
+
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food4.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Fresh white shrimp</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">21.00 $</p>
+                                <p class="content__prime-price">24.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                        
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food8.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Guava</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">8.00 $</p>
+                                <p class="content__prime-price">10.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>
+
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food9.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Sapodilla</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">27.00 $</p>
+                                <p class="content__prime-price">30.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                        
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food10.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Organic rice</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">7.00 $</p>
+                                <p class="content__prime-price">10.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>
+
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food11.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Veal</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">21.00 $</p>
+                                <p class="content__prime-price">24.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                        
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food12.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">America red grapes with seeds</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">8.00 $</p>
+                                <p class="content__prime-price">10.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>
+
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food13.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Silkworm pupa</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">51.00 $</p>
+                                <p class="content__prime-price">72.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                        
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food14.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">Beef tenderloin</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">82.00 $</p>
+                                <p class="content__prime-price">100.00 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+                            <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Vegetable -->
+            <div class="content__vegetable-wrapper">
+                <div class="content__vegetable-box">
+                    <h2 class="content__vegetable">Vegetables-Fruits</h2>
+                    
+                    <a href="./products_fruits.html" class="content__vegetable-seemore">See more <i class="fa-solid fa-caret-right"></i></a>
+                </div>
+                <div class="content__products-box">
+                    <ul class="content__vegetable-products-list">
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box sale-39">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food1.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Green asparagus</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">2.00 $</p>
+                                    <p class="content__prime-price">4.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+                                <!-- <div class="content__add-cart-box"> -->
+                                    <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                                <!-- </div> -->
+                            </div>
+                        </li>
+    
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food5.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Seedless red watermelon</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">3.00 $</p>
+                                    <p class="content__prime-price">6.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                        </li>
+                        
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box sale-36">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food2.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Seedless red watermelon</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">8.00 $</p>
+                                    <p class="content__prime-price">10.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                        </li>   
+    
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food6.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Mint basil</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">12.00 $</p>
+                                    <p class="content__prime-price">13.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                        </li>                
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Meat-Seafood -->
+            <div class="content__vegetable-wrapper">
+                <div class="content__vegetable-box">
+                    <h2 class="content__vegetable">Meat-Seafood</h2>
+                    
+                    <a href="./meatSeafood.html" class="content__vegetable-seemore">See more <i class="fa-solid fa-caret-right"></i></a>
+                </div>
+                <div class="content__products-box">
+                    <ul class="content__vegetable-products-list">
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box sale-39">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food4.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Fresh white shrimp</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">21.00 $</p>
+                                    <p class="content__prime-price">24.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+                                <!-- <div class="content__add-cart-box"> -->
+                                    <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                                <!-- </div> -->
+                            </div>
+
+                        </li>
+    
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food13.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Silkworm pupa</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">51.00 $</p>
+                                    <p class="content__prime-price">72.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                            
+                            <!-- <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food6.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Mint basil</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">12.00 $</p>
+                                    <p class="content__prime-price">13.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div> -->
+                        </li>
+                        
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box sale-36">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food11.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Veal</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">21.00 $</p>
+                                    <p class="content__prime-price">24.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                            
+                            <!-- <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food7.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Jute vegetables</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">4.00 $</p>
+                                    <p class="content__prime-price">5.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div> -->
+                        </li>   
+    
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food14.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Beef tenderloin</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">82 $</p>
+                                    <p class="content__prime-price">100 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                            
+                            <!-- <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food8.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Guava</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">8.00 $</p>
+                                    <p class="content__prime-price">10.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div> -->
+                        </li>                
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Egg -->
+            <div class="content__vegetable-wrapper">
+                <div class="content__vegetable-box">
+                    <h2 class="content__vegetable">Egg-Rice</h2>
+                    
+                    <a href="./eggRice.html" class="content__vegetable-seemore">See more <i class="fa-solid fa-caret-right"></i></a>
+                </div>
+                <div class="content__products-box">
+                    <ul class="content__vegetable-products-list">
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box sale-39">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/egg1.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Brown rice</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">19.00 $</p>
+                                    <p class="content__prime-price">21.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+                                <!-- <div class="content__add-cart-box"> -->
+                                    <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                                <!-- </div> -->
+                            </div>
+                        </li>
+    
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/egg2.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Organic Rice</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">21.00 $</p>
+                                    <p class="content__prime-price">24.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                        
+                        </li>
+                        
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box sale-36">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/egg3.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Purple organic rice</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">21.00 $</p>
+                                    <p class="content__prime-price">24.00 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+    
+                        </li>   
+    
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/egg4.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">Herbal organic rice</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">14.00 $</p>
+                                    <p class="content__prime-price">18.99 $</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">Add to cart <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                        </li>                
+                    </ul>
+                </div>
+
+            </div>
+            
+            
+        </div>
+
+        <div class="content__list-item-bg">
+            <div class="content__list-item-wrapper grid wide">
+                <h1 class="content__list-item-view">View by category</h1>
+
+            <ul class="content__list-item-category">
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/rau-cu-qua.png" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="./products_fruits.html" class="content__list-item-link">Vegetables-Fruits</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/beff.png" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="./meatSeafood.html" class="content__list-item-link">Meat-Seafood</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/gao.png" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="./eggRice.html" class="content__list-item-link">Rice</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/rau-cu.png" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="./products_fruits2.html" class="content__list-item-link">Vegetables</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/traiCay.png" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="" class="content__list-item-link">Fruits</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/nam2.jpg" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="" class="content__list-item-link">Mushroom</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/thit.jpg" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="./meatSeafood.html" class="content__list-item-link">Meat</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/egg.png" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="" class="content__list-item-link">Egg</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer__advice-wrapper grid wide">
+            <h1 class="footer__advice-tips">Useful tips</h1>
+            <div class="footer__advice-list">
+                <div class="footer__advice-item">
+                    <div class="footer__advice-img"><img src="./imgs/sale-paner.jpg" alt=""></div>
+                    <div class="footer__advice-text-box">
+                        <a href="" class="footer__advice-title">Super hot promotion - Supper Cheap</a>
+                        <p class="footer__advice-text">A big and interesting surprise, an extremely attractive and super terrible promotion for the first time...</p>
+                    </div>
+                </div>
+
+                <div class="footer__advice-item">
+                    <div class="footer__advice-img"><img src="./imgs/nau_an_ngon.jpg" alt=""></div>
+                    <div class="footer__advice-text-box">
+                        <a href="" class="footer__advice-title">Cook better with clean food</a>
+                        <p class="footer__advice-text">Eating is an eternal human affair. In the past, we just needed to eat well, now we need to eat well. Then there's the food problem...</p>
+                    </div>
+                </div>
+
+                <div class="footer__advice-item">
+                    <div class="footer__advice-img"><img src="./imgs/thuc_pham_sach.jpg" alt=""></div>
+                    <div class="footer__advice-text-box">
+                        <a href="" class="footer__advice-title">Choose clean food and cook it properly</a>
+                        <p class="footer__advice-text">Food is an essential human need for survival and development. Society is increasingly progressive, receiving...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bg-img">
+            <div class="footer__wrapper grid wide">
+                <div class="footer__wrapper-sub">
+                    <div class="footer__infor-col-1 c-3">
+                        <div class="footer__infor-logo">
+                            <a alt="" href=""><img src="./imgs/logo_footer.jpg" alt=""></a>
+                        </div>
+                        <p class="footer__infor-logo-text">MiniMart supermarket provides super clean items that bring you health</p>
+                        <div class="footer__infor-logo-address">
+                            <span><i class="fa-solid fa-map-location"></i></span>
+                            <p>Tang 6 Ladeco, 266 Doi Can, Ha Noi</p>
+                        </div>
+                        <div class="footer__infor-logo-phone">
+                            <span><i class="fa-solid fa-phone-volume"></i></span>
+                            <a href="tel:+090 7155 5836">090 7155 5836</a>
+                        </div>
+                        <div class="footer__infor-logo-email">
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <a href="mailto:vuducthjnh2k@gmail.com">vuducthjnh2k@gmail.com</a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__infor-col-2 c-3">
+                        <h3 class="footer__infor-account">account</h3>
+                        <ul class="footer__infor-account-list">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Introduce</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__infor-col-2 c-3">
+                        <h3 class="footer__infor-account">Customer support</h3>
+                        <ul class="footer__infor-account-list">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Introduce</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__infor-col-4 c-3">
+                        <h3 class="footer__infor-send">send email</h3>
+                        <label for="sendEmail">Send email to receive promotion</label>
+                        <div class="footer__infor-input">
+                            <input type="text" id="sendEmail" name="sendEmail" placeholder="Your Email">
+                            <span><i class="fa-solid fa-paper-plane"></i></span>
+                        </div>
+                        <h4>Connection</h4>
+                        <div class="footer__infor-social">
+                            <span class="footer__social-google"><a href="https://www.google.com/"><i class="fa-brands fa-google-plus-g"></i></a></span>
+                            <span class="footer__social-twitter"><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></span>
+                            <span class="footer__social-facebook"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></span>
+                            <span class="footer__social-instagram"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="footer__last-text">© Copyright belongs to <span>Vu Thinh</span> | Provided by <span>Thinh</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+
+
+    <div id="modal-mobile">
+        <div class="modal-mobile-wrapper">
+            <div class="nav-mobile">
+                <div class="nav__list-title">
+                    <span class="nav__list-open" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+                    <h2 class="nav__list-text">menu</h2>
+                    <span class="nav-mobile-close"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+                <ul class="nav__list nav__list-mobile">
+                    <li><span class="nav__list-icons"><i class="fa-solid fa-gear"></i></span><a href="./products_fruits.html" class="nav__list-link">vegetable - fruit</a></li>
+                    <li><span class="nav__list-icons"><i class="fa-solid fa-heart"></i></span><a href="./meatSeafood.html" class="nav__list-link">meat - seafood</a></li>
+                    <li><span class="nav__list-icons"><i class="fa-solid fa-circle-plus"></i></span><a href="./eggRice.html" class="nav__list-link">egg</a></li>
+                    <li><span class="nav__list-icons"><i class="fa-solid fa-bowl-rice"></i></span><a href="./eggRice.html" class="nav__list-link">rice</a></li>
+                    <li><span class="nav__list-icons"><i class="fa-sharp fa-solid fa-leaf"></i></span><a href="./products_fruits2.html" class="nav__list-link">fruit</a></li>
+                    <li><span class="nav__list-icons"><i class="fa-sharp fa-solid fa-shrimp"></i></span><a href="./meatSeafood.html" class="nav__list-link">seafood</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal">
+        <div class="modal__block">
+            <button type="button" class="modal__close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal__main-block">
+                <div class="modal__left-box">
+                    <div class="modal__left-img"><img src="" alt="" class="modal__img"></div>
+                </div>
+    
+                <div class="modal__right-box">
+                    <p class="modal__right-name"></p>
+                    <p class="modal__right-text">Added to your cart</p>
+                    <div class="modal__price-box">
+                        <p class="modal__sale-price"></p>
+                        <p class="modal__prime-price"></p>
+                    </div>
+                    <div class="modal__cart-information">
+                        <button type="button" class="modal__cart-btn-left"><span class="modal__cart-btn-icon"><i class="fa-solid fa-cart-shopping"></i></span><a href="./buyPage.html">View cart</a></button>
+                        <button type="button" class="modal__cart-btn-right"><a>Continue shopping</a></button>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/js.js" defer></script>
+
+</body>
+</html>
