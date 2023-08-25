@@ -8,10 +8,6 @@ body {
     box-sizing: border-box;
 }
 
-.show {
-    display: block !important;
-}
-
 /* HEAD */
 
 .head__container {
