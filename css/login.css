@@ -11,6 +11,10 @@ body {
 
 /* HEAD */
 
+.show {
+    display: block !important;
+}
+
 .head__container {
     position: fixed;
     top: 0;
@@ -135,11 +139,16 @@ body {
     align-items: center;
     display: none;
     bottom: -130%;
+    justify-content: center;
     left: 0;
     width: 100%;
     background: #fff;
     height: 24px;
     border-radius: 3px;
+}
+
+.showCountry {
+    display: flex;
 }
 
 .right__country-box::after {
@@ -150,10 +159,6 @@ body {
     background-color: transparent;
     bottom: -30%;
     right: 0;
-}
-
-.right__country-box:hover .right__country-sub-box {
-    display: flex;
 }
 
 .right__country-sub-el {

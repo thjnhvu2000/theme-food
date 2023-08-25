@@ -11,6 +11,10 @@ body {
 
 /* HEAD */
 
+.show {
+    display: block !important;
+}
+
 .head__container {
     position: fixed;
     top: 0;
@@ -136,6 +140,7 @@ body {
     display: none;
     bottom: -130%;
     left: 0;
+    justify-content: center;
     width: 100%;
     background: #fff;
     height: 24px;
@@ -152,7 +157,7 @@ body {
     right: 0;
 }
 
-.right__country-box:hover .right__country-sub-box {
+.showCountry {
     display: flex;
 }
 
