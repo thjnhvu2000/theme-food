@@ -4,77 +4,56 @@ let getCart = document.querySelector(".right__cart-box");
 getCart.onclick = function() {hiddenF()};
 
 function hiddenF() {
-    document.querySelector(".right__cart-list-item").classList.toggle("show")
+    getCartList = document.querySelector
+    (".right__cart-list-item").classList.toggle("show")
 }
 
-
-// Country 
-let getCountry = document.querySelector(".right__country-box");
-
-getCountry.onclick = () => {
-    handleCountry();
-}
-
-function handleCountry() {
-    document.querySelector(".right__country-sub-box").classList.toggle("showCountry");
-}
-
-// Nav Mobile 
-let menuMobile = document.querySelector(".head__mobile-nav span");
-menuMobile.addEventListener("click", () => {
-    let modalMobile = document.querySelector("#modal-mobile");
-    let modalMbWrapper = document.querySelector(".modal-mobile-wrapper");
-
-    modalMobile.style.visibility = "unset";
-    modalMbWrapper.style.transform = "translateX(0)";
-   
-    document.querySelector(".nav-mobile-close").addEventListener("click", () => {
-        modalMobile.style.visibility = "hidden";
-        modalMbWrapper.style.transform = "translateX(-100%)";
-    })
-
-    modalMobile.addEventListener("click", () => {
-        modalMobile.style.visibility = "hidden";
-        modalMbWrapper.style.transform = "translateX(-100%)";
-        modalMbWrapper.addEventListener("click", (e) => {
-            e.stopPropagation();
-        })
-    })
-})
 
 // Slider
-let sliderFirstImgWidth = document.querySelectorAll(".slider-main img")[0].clientWidth + 5;
-let sliderMain = document.querySelector(".slider-main");
-let sliderIcons = document.querySelectorAll("#slider-wrapper span");
-sliderIcons.forEach((sliderIcon) => {
-    sliderIcon.addEventListener("click", () => {
-        sliderMain.scrollLeft += sliderIcon.id == "prev" ? -sliderFirstImgWidth : sliderFirstImgWidth;
-    })
-})
-
-
-
-// SLIDER AUTO
-let sliderImgs = [
+let imgs = [
     "./imgs/food-slider_5.jpg",
     "./imgs/food-slider_8.jpg",
     "./imgs/food-slider_6.jpg"
 ];
 
-var sliderImg = document.querySelector(".slider-main img");
+let num = 0;
+
+function next() {
+    let slider = document.querySelector(".slider-img");
+    num++;
+    if(num >= imgs.length) {
+        num = 0;
+    }
+
+    slider.setAttribute("src", `${imgs[num]}`);
+}
+
+function prev() {
+    let slider = document.querySelector(".slider-img");
+    num--;
+    if(num < 0) {
+        num = imgs.length - 1;
+    }
+    slider.setAttribute("src", `${imgs[num]}`);
+
+}
+
+
+// SLIDER AUTO
+var imgSlider = document.querySelector(".slider-img");
 
 var i = 1;
 
 function sliderShowAuto() {
-    sliderImg.setAttribute("src", sliderImgs[i]);
+    imgSlider.setAttribute("src", imgs[i]);
     i++;
-    if(i == sliderImgs.length) {
+    if(i == imgs.length) {
         i= 0;
     }
 
 } 
 
-setInterval(sliderShowAuto, 2000);
+setInterval(sliderShowAuto, 5000);
 
 
 // SLIDER HIDDEN

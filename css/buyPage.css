@@ -10,10 +10,6 @@ body {
 
 /* HEAD */
 
-.show {
-    display: block !important;
-}
-
 .head__container {
     position: fixed;
     top: 0;
@@ -481,7 +477,7 @@ body {
     border: 2px solid var(--text-color);
 }
 
-.content__top-list li:nth-child(2) > .content__list-num {
+.content__top-list li:first-child > .content__list-num {
     background-color: var(--text-color);
     color: #fff;
 }
@@ -501,9 +497,38 @@ body {
 .content__bottom-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
+}
+
+.content__left-box {
     background-color: #fff;
 }
 
+.content__left-wrapper {
+    display: flex;
+    text-align: center;
+}
+
+.content__left-address,
+.content__left-login {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #241f1f;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 14px 0;
+    transition: .2s ease;
+}
+
+.content__left-address:hover,
+.content__left-login:hover {
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+.content__left-login {
+    background-color: #dad6d6;
+}
 
 .content__form-1 {
     margin: 40px 20px;
@@ -520,11 +545,22 @@ body {
 }
 
 .content__left-input {
-    width: 49%;
-    float: left;
+    width: 100%;    
     padding: 14px 8px;
     border: 1px solid #ccc;
     border-radius: 3px;
+}
+
+.input__pair-1 input[id="fullName"],
+.input__pair-2 input[id="email"],
+.input__pair-3 input[id="area"] {
+    margin-right: 5px;
+}
+
+.input__pair-1 input[id="phoneNumber"],
+.input__pair-2 select[id="region"],
+.input__pair-3 input[id="city"] {
+    margin-left: 5px;
 }
 
 .content__input-address,
@@ -536,6 +572,62 @@ body {
     margin-bottom: 15px;
 }
 
+.content__btn {
+    padding: 12px 40px;
+    background: linear-gradient(#f4c8a7, #ee6911);
+    opacity: 1;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin: 0 auto;;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: .2s ease;
+    color: #fff;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.content__btn:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+.content__btn > span {
+    padding-left: 8px;
+}
+
+.content__form-2 {
+    text-align: center;
+    margin: 40px;
+    display: none;
+}
+
+.content__btn-2 {
+    padding: 12px 40px;
+    background: linear-gradient(#f4c8a7, #ee6911);
+    opacity: 1;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    transition: .2s ease;
+    font-family: cursive;
+}
+
+.content__btn-2:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+.content__btn-2 > span {
+    padding-left: 5px;
+}
 
 .content__input-log {
     display: inline;
@@ -580,156 +672,6 @@ body {
 .content__btn-google:hover {
     opacity: .9;
 } 
-
-.content__pay-top-box {
-    text-align: center;
-    padding: 14px 0 14px 14px;
-}
-
-.content__pay-top-address {
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.content__pay-top-address > a {
-    text-decoration: none;
-    font-size: 10px;
-    color: #337ab7;
-    padding-left: 5px;
-}
-
-.content__pay-user-box,
-.content__pay-address-box,
-.content__pay-address2-box,
-.content__pay-phone-box {
-    display: flex;
-    padding: 8px 0;
-}
-
-.content__pay-user-box span,
-.content__pay-address-box span,
-.content__pay-address2-box span,
-.content__pay-phone-box span {
-    padding-right: 10px ;
-    color: var(--primary-color);
-    font-size: 16px;
-}
-
-.content__pay-user-box {
-    padding-top: 20px;
-}
-
-.content__pay-bt-box {
-    position: relative;
-    border-top: 1px solid #e3dfdf;
-    margin-top: 80px;
-    padding: 14px 0 0 14px;
-}
-
-.content__pay-bt-method {
-    text-transform: uppercase;
-    padding: 20px 0;
-}
-
-.content__pay-method-list {
-    list-style: none;
-}
-
-.content__pay-method-list li {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 38%;
-    padding: 22px 12px;
-    border: 1px solid #000;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #343232;
-    cursor: pointer;
-    transition: all .2s ease;
-}
-
-.content__pay-method-list li:hover {
-    border-color: rgb(242, 159, 5);
-}
-
-.content__pay-messenger {
-    position: absolute;
-    width: 50%;
-    right: 0;
-    top: 17%;
-    border: 1px solid #ccc;
-    padding: 20px 18px;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    display: none;
-}
-
-.content__pay-messenger-2 {
-    position: absolute;
-    width: 50%;
-    right: 0;
-    top: 53%;
-    border: 1px solid #ccc;
-    padding: 20px 18px;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    display: none;
-}
-
-.content__pay-messenger-3 {
-    position: absolute;
-    width: 50%;
-    right: 0;
-    top: 70.5%;
-    border: 1px solid #ccc;
-    padding: 20px 18px;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    display: none;
-}
-
-.content__pay-messenger-4 {
-    position: absolute;
-    width: 50%;
-    right: 0;
-    top: 87.5%;
-    border: 1px solid #ccc;
-    padding: 20px 18px;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    display: none;
-}
-
-.content__pay-method-img {
-    max-width: 20%;
-    padding-right: 14px;
-}
-
-.content__pay-method-table {
-    position: absolute;
-    display: none;
-    top: 20%;
-    right: 0;
-}
-
-.content__pay-method-table table {
-    padding: 20px;
-}
-
-.content__pay-method-table table tr td {
-    border: 1px solid #ccc;
-}
-
-.content__pay-method-table td {
-    padding: 10px 20px;
-}
 
 .content__right-box {
     margin-left: 50px;
@@ -893,53 +835,6 @@ body {
     font-size: 16px;
 }
 
-.content__pay-btn-box {
-    text-align: center;
-    padding-top: 60px;
-}
-
-.content__pay-btn-back,
-.content__pay-btn-next {
-    padding: 10px 40px;
-    background: linear-gradient(#f4c8a7, #ee6911);
-    opacity: 1;
-    border: none;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #fff;
-    transition: .2s ease;
-    font-weight: 600;
-    font-family: cursive;
-}   
-
-.content__pay-btn-back:hover,
-.content__pay-btn-next:hover {
-    opacity: .8;
-    cursor: pointer;
-}
-
-.content__pay-btn-back i {
-    padding-right: 6px;
-}
-
-.content__pay-btn-next i {
-    padding-left: 6px;
-}
-
-.content__pay-btn-back a,
-.content__pay-btn-next a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.content__pay-btn-back {
-
-}
-
-.content__pay-btn-next {
-
-}
 
 /* FOOTER */
 

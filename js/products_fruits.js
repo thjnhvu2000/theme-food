@@ -135,71 +135,8 @@ getCtenOrigin.addEventListener("click", function() {
 // })
 
 
-// let getCtPageBack = document.querySelector(".content__right-page-back");
-// let getCtPageNext = document.querySelector(".content__right-page-next");
-// let getCtPageOne = document.querySelector(".content__right-page-one");
-// let getCtPageTwo = document.querySelector(".content__right-page-two");
+let getCtPageBack = document.querySelector(".content__right-page-back");
+let getCtPageNext = document.querySelector(".content__right-page-next");
+let getCtPageOne = document.querySelector(".content__right-page-one");
+let getCtPageTwo = document.querySelector(".content__right-page-two");
 
-
-
-// MODAL 
-let getProductsName = document.querySelectorAll(".content__products-text");
-let getProductsSalePrice = document.querySelectorAll(".content__sale-price");
-let getProductsPrimePrice = document.querySelectorAll(".content__prime-price");
-let getModalBtn =  document.querySelectorAll(".content__add-cart");
-let getModal = document.querySelector("#modal");
-let getModalBlock = document.querySelector(".modal__block");
-let getModalClose = document.querySelector(".modal__close");
-let getModalPriceBox = document.querySelector(".modal__price-box");
-let modalProductsSale = document.querySelector(".modal__sale-price");
-let modalProductsPrime = document.querySelector(".modal__prime-price");
-
-
-
-    for(let i = 0; i < getModalBtn.length; i++) {
-        getModalBtn[i].addEventListener("click", function() {
-            getModal.style.display = "block";
-            getModalBlock.style.transform = "unset";
-            getModal.style.visibility = "unset";    
-            getModalBlock.style.animation = "modalOpen .2s ease";
-            let getProductImg = this.parentElement.childNodes[1].childNodes[1].getAttribute("src");
-            document.querySelector(".modal__img").setAttribute("src", getProductImg);
-            let getProductName = this.parentElement.childNodes[3].textContent;
-            let getProductSalePrice = this.parentElement.childNodes[5].childNodes[1].textContent;
-            let getProductPrimePrice = this.parentElement.childNodes[5].childNodes[3].textContent;
-            document.querySelector(".modal__right-name").innerText = getProductName;
-            modalProductsSale.innerText = getProductSalePrice;
-            modalProductsPrime.innerText = getProductPrimePrice;
-        })
-    }
-
- 
-getModalClose.addEventListener("click", function() {
-    getModalBlock.style.transform = "translateY(-165%)";
-    getModal.style.visibility = "hidden";
-})
-getModal.addEventListener("click", function() {
-    getModalBlock.style.transform = "translateY(-165%)";
-    getModal.style.visibility = "hidden";    
-})
-
-document.addEventListener('keydown', function(e) {
-    if(e.key === 'Escape'){
-        getModalBlock.style.transform = "translateY(-165%)";
-        getModal.style.visibility = "hidden";
-    }
-  })
-
-getModalBlock.addEventListener("click", function(e) {
-    e.stopPropagation();
-})
-
-// Continue shopping hidden
-document.querySelector(".modal__cart-btn-right").addEventListener("click", function() {
-    hiddenModal();
-})
-
-function hiddenModal() {
-    getModalBlock.style.transform = "translateY(-165%)";
-    getModal.style.visibility = "hidden";
-}
