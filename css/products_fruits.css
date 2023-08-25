@@ -11,6 +11,10 @@ body {
     display: flex !important;
 }
 
+.show {
+    display: block !important;
+}
+
 * {
     margin: 0;
     padding: 0;
