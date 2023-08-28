@@ -25,7 +25,7 @@ menuMobile.addEventListener("click", () => {
     let modalMobile = document.querySelector("#modal-mobile");
     let modalMbWrapper = document.querySelector(".modal-mobile-wrapper");
 
-    modalMobile.style.visibility = "unset";
+    modalMobile.style.visibility = "visible";
     modalMbWrapper.style.transform = "translateX(0)";
    
     document.querySelector(".nav-mobile-close").addEventListener("click", () => {
@@ -51,7 +51,6 @@ sliderIcons.forEach((sliderIcon) => {
         sliderMain.scrollLeft += sliderIcon.id == "prev" ? -sliderFirstImgWidth : sliderFirstImgWidth;
     })
 })
-
 
 
 // SLIDER AUTO

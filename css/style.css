@@ -675,6 +675,11 @@ body {
     text-decoration: none;
     color: #000;
     padding-left: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 40vw;
 }
 
 .content__products-price-box {

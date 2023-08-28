@@ -186,6 +186,10 @@
         height: 100%;
     }
 
+    .content__list-item-img {
+        height: 90px;
+    }
+
     .content__list-item-category {
         grid-template-columns: 1fr 1fr;
         padding: 30px 10px;
