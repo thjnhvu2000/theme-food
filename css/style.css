@@ -777,7 +777,7 @@ body {
 .modal__block {
     position: sticky;
     width: 30vw;
-    height: 20vh;
+    height: 25vh;
     border: 4px solid #aaa3a3;
     margin: 0 auto;
     top: 10%;
@@ -816,8 +816,9 @@ body {
 .modal__main-block {
     display: grid;
     grid-template-columns: 0.8fr 2fr;
-    margin: 20px;
+    margin-left: 20px;
     grid-gap: 12px;
+    height: 100%;
     align-items: center;
 }
 
