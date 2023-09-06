@@ -675,11 +675,6 @@ body {
     text-decoration: none;
     color: #000;
     padding-left: 15px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-    width: 40vw;
 }
 
 .content__products-price-box {
@@ -782,7 +777,7 @@ body {
 .modal__block {
     position: sticky;
     width: 30vw;
-    height: 25vh;
+    height: 20vh;
     border: 4px solid #aaa3a3;
     margin: 0 auto;
     top: 10%;
@@ -821,9 +816,8 @@ body {
 .modal__main-block {
     display: grid;
     grid-template-columns: 0.8fr 2fr;
-    margin-left: 20px;
+    margin: 20px;
     grid-gap: 12px;
-    height: 100%;
     align-items: center;
 }
 
@@ -1263,7 +1257,7 @@ input[id="sendEmail"] {
         bottom: 0;
         right: 0;
         left: 0;
-        visibility: hidden;
+        opacity: 0;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 999;
         transition: all .3s ease;

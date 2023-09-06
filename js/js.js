@@ -25,19 +25,16 @@ menuMobile.addEventListener("click", () => {
     let modalMobile = document.querySelector("#modal-mobile");
     let modalMbWrapper = document.querySelector(".modal-mobile-wrapper");
 
-    modalMobile.style.visibility = "visible";
-    modalMobile.style.transform = "translateX(0)";
+    modalMobile.style.opacity = "1";
     modalMbWrapper.style.transform = "translateX(0)";
    
     document.querySelector(".nav-mobile-close").addEventListener("click", () => {
-        modalMobile.style.visibility = "hidden";
-        modalMobile.style.transform = "translateX(-100%)";
+        modalMobile.style.opacity = "0";
         modalMbWrapper.style.transform = "translateX(-100%)";
     })
 
     modalMobile.addEventListener("click", () => {
-        modalMobile.style.visibility = "hidden";
-        modalMobile.style.transform = "translateX(-100%)";
+        modalMobile.style.opacity = "0";
         modalMbWrapper.style.transform = "translateX(-100%)";
         modalMbWrapper.addEventListener("click", (e) => {
             e.stopPropagation();

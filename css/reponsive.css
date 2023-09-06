@@ -29,14 +29,6 @@
         max-height: 240px;
     }
 
-    #modal-mobile {
-        visibility: hidden;
-    }
-
-    #modal {
-        display: none;
-    }
-
     #next {
         right: 0;
     }
