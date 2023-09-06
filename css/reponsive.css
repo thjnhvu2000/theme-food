@@ -33,6 +33,10 @@
         visibility: hidden;
     }
 
+    #modal {
+        display: none;
+    }
+
     #next {
         right: 0;
     }

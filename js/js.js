@@ -206,8 +206,7 @@ window.addEventListener("load", function() {
         for(let i = 0; i < getModalBtn.length; i++) {
             getModalBtn[i].addEventListener("click", function() {
                 getModal.style.display = "block";
-                getModalBlock.style.transform = "unset";
-                getModal.style.visibility = "unset";    
+                getModalBlock.style.transform = "unset";   
                 getModalBlock.style.animation = "modalOpen .2s ease";
                 let getProductImg = this.parentElement.childNodes[1].childNodes[1].getAttribute("src");
                 document.querySelector(".modal__img").setAttribute("src", getProductImg);
