@@ -25,7 +25,7 @@ menuMobile.addEventListener("click", () => {
     let modalMobile = document.querySelector("#modal-mobile");
     let modalMbWrapper = document.querySelector(".modal-mobile-wrapper");
 
-    modalMobile.style.visibility = "visible";
+    modalMobile.style.visibility = "unset";
     modalMbWrapper.style.transform = "translateX(0)";
    
     document.querySelector(".nav-mobile-close").addEventListener("click", () => {
@@ -51,6 +51,7 @@ sliderIcons.forEach((sliderIcon) => {
         sliderMain.scrollLeft += sliderIcon.id == "prev" ? -sliderFirstImgWidth : sliderFirstImgWidth;
     })
 })
+
 
 
 // SLIDER AUTO
@@ -188,87 +189,78 @@ window.addEventListener("load", function() {
     //         index--;
     //     }
     // }
-});
-
-
-// MODAL 
-let getProductsName = document.querySelectorAll(".content__products-text");
-let getProductsSalePrice = document.querySelectorAll(".content__sale-price");
-let getProductsPrimePrice = document.querySelectorAll(".content__prime-price");
-let getModalBtn =  document.querySelectorAll(".content__add-cart");
-let getModal = document.querySelector("#modal");
-let getModalBlock = document.querySelector(".modal__block");
-let getModalClose = document.querySelector(".modal__close");
-let getModalPriceBox = document.querySelector(".modal__price-box");
-let modalProductsSale = document.querySelector(".modal__sale-price");
-let modalProductsPrime = document.querySelector(".modal__prime-price");
-
-
-
-    for(let i = 0; i < getModalBtn.length; i++) {
-        getModalBtn[i].addEventListener("click", function() {
-            getModal.style.display = "block";
-            getModalBlock.style.transform = "unset";
-            getModal.style.visibility = "unset";    
-            getModalBlock.style.animation = "modalOpen .2s ease";
-            let getProductImg = this.parentElement.childNodes[1].childNodes[1].getAttribute("src");
-            document.querySelector(".modal__img").setAttribute("src", getProductImg);
-            let getProductName = this.parentElement.childNodes[3].textContent;
-            let getProductSalePrice = this.parentElement.childNodes[5].childNodes[1].textContent;
-            let getProductPrimePrice = this.parentElement.childNodes[5].childNodes[3].textContent;
-            document.querySelector(".modal__right-name").innerText = getProductName;
-            modalProductsSale.innerText = getProductSalePrice;
-            modalProductsPrime.innerText = getProductPrimePrice;
-        })
-    }
-
- 
-getModalClose.addEventListener("click", function() {
-    getModalBlock.style.transform = "translateY(-165%)";
-    getModal.style.visibility = "hidden";
-})
-getModal.addEventListener("click", function() {
-    getModalBlock.style.transform = "translateY(-165%)";
-    getModal.style.visibility = "hidden";    
-})
-
-document.addEventListener('keydown', function(e) {
-    if(e.key === 'Escape'){
+    // MODAL 
+    let getProductsName = document.querySelectorAll(".content__products-text");
+    let getProductsSalePrice = document.querySelectorAll(".content__sale-price");
+    let getProductsPrimePrice = document.querySelectorAll(".content__prime-price");
+    let getModalBtn =  document.querySelectorAll(".content__add-cart");
+    let getModal = document.querySelector("#modal");
+    let getModalBlock = document.querySelector(".modal__block");
+    let getModalClose = document.querySelector(".modal__close");
+    let getModalPriceBox = document.querySelector(".modal__price-box");
+    let modalProductsSale = document.querySelector(".modal__sale-price");
+    let modalProductsPrime = document.querySelector(".modal__prime-price");
+    
+    
+    
+        for(let i = 0; i < getModalBtn.length; i++) {
+            getModalBtn[i].addEventListener("click", function() {
+                getModal.style.display = "block";
+                getModalBlock.style.transform = "unset";
+                getModal.style.visibility = "unset";    
+                getModalBlock.style.animation = "modalOpen .2s ease";
+                let getProductImg = this.parentElement.childNodes[1].childNodes[1].getAttribute("src");
+                document.querySelector(".modal__img").setAttribute("src", getProductImg);
+                let getProductName = this.parentElement.childNodes[3].textContent;
+                let getProductSalePrice = this.parentElement.childNodes[5].childNodes[1].textContent;
+                let getProductPrimePrice = this.parentElement.childNodes[5].childNodes[3].textContent;
+                document.querySelector(".modal__right-name").innerText = getProductName;
+                modalProductsSale.innerText = getProductSalePrice;
+                modalProductsPrime.innerText = getProductPrimePrice;
+            })
+        }
+    
+     
+    getModalClose.addEventListener("click", function() {
+        getModalBlock.style.transform = "translateY(-165%)";
+        getModal.style.visibility = "hidden";
+    })
+    getModal.addEventListener("click", function() {
+        getModalBlock.style.transform = "translateY(-165%)";
+        getModal.style.visibility = "hidden";    
+    })
+    
+    document.addEventListener('keydown', function(e) {
+        if(e.key === 'Escape'){
+            getModalBlock.style.transform = "translateY(-165%)";
+            getModal.style.visibility = "hidden";
+        }
+      })
+    
+    getModalBlock.addEventListener("click", function(e) {
+        e.stopPropagation();
+    })
+    
+    // Continue shopping hidden
+    document.querySelector(".modal__cart-btn-right").addEventListener("click", function() {
+        hiddenModal();
+    })
+    
+    function hiddenModal() {
         getModalBlock.style.transform = "translateY(-165%)";
         getModal.style.visibility = "hidden";
     }
-  })
+});
 
-getModalBlock.addEventListener("click", function(e) {
-    e.stopPropagation();
+
+
+// API 
+let itemsApi = "http://localhost:3000/items";
+fetch(itemsApi)
+.then((response) => {
+    return response.json();
 })
 
-// Continue shopping hidden
-document.querySelector(".modal__cart-btn-right").addEventListener("click", function() {
-    hiddenModal();
+.then((items) => {
+    console.log(items);
 })
-
-function hiddenModal() {
-    getModalBlock.style.transform = "translateY(-165%)";
-    getModal.style.visibility = "hidden";
-}
-
-
-// let apiLink = 'https://jsonplaceholder.typicode.com/posts'
-
-// fetch(apiLink)
-// .then((response) => {
-//     return response.json();
-// })
-
-// .then((comments) => {
-//     let htmls = comments.map((comment) => {
-//         return `<li>
-//         <h1>User id: ${comment.id}</h1>
-//         <p>Title: ${comment.title}</p>
-//         </li>`
-
-//     })
-//     let html = htmls.join('');
-//     document.querySelector("#test-block").innerHTML = html;
-// })
