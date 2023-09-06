@@ -26,14 +26,17 @@ menuMobile.addEventListener("click", () => {
     let modalMbWrapper = document.querySelector(".modal-mobile-wrapper");
 
     modalMobile.style.opacity = "1";
+    modalMobile.style.visibility = "visible";
     modalMbWrapper.style.transform = "translateX(0)";
    
     document.querySelector(".nav-mobile-close").addEventListener("click", () => {
         modalMobile.style.opacity = "0";
+        modalMobile.style.visibility = "hidden";
         modalMbWrapper.style.transform = "translateX(-100%)";
     })
 
     modalMobile.addEventListener("click", () => {
+        modalMobile.style.visibility = "hidden";
         modalMobile.style.opacity = "0";
         modalMbWrapper.style.transform = "translateX(-100%)";
         modalMbWrapper.addEventListener("click", (e) => {
