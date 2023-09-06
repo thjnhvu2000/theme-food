@@ -26,6 +26,7 @@ menuMobile.addEventListener("click", () => {
     let modalMbWrapper = document.querySelector(".modal-mobile-wrapper");
 
     modalMobile.style.visibility = "visible";
+    modalMobile.style.transform = "translateX(0)";
     modalMbWrapper.style.transform = "translateX(0)";
    
     document.querySelector(".nav-mobile-close").addEventListener("click", () => {
