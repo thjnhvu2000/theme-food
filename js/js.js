@@ -30,11 +30,13 @@ menuMobile.addEventListener("click", () => {
    
     document.querySelector(".nav-mobile-close").addEventListener("click", () => {
         modalMobile.style.visibility = "hidden";
+        modalMobile.style.transform = "translateX(-100%)";
         modalMbWrapper.style.transform = "translateX(-100%)";
     })
 
     modalMobile.addEventListener("click", () => {
         modalMobile.style.visibility = "hidden";
+        modalMobile.style.transform = "translateX(-100%)";
         modalMbWrapper.style.transform = "translateX(-100%)";
         modalMbWrapper.addEventListener("click", (e) => {
             e.stopPropagation();
