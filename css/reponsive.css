@@ -82,6 +82,10 @@
         max-width: 100%;
     }
 
+    .content__right-wrapper {
+        margin: 40px 0;
+    }
+
     .c-4 {
         flex: 0 0 50%;
         max-width: 50%;
