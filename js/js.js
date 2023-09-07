@@ -4,9 +4,8 @@ let getCart = document.querySelector(".right__cart-box");
 getCart.onclick = function() {hiddenF()};
 
 function hiddenF() {
-    document.querySelector(".right__cart-list-item").classList.toggle("show")
+    document.querySelector(".right__cart-list-item").classList.toggle("show");
 }
-
 
 // Country 
 let getCountry = document.querySelector(".right__country-box");
@@ -86,8 +85,6 @@ function openNav() {
     getNavList.classList.toggle("show");
 }
 
-
-
 window.addEventListener("load", function() {
     const sliderBox = document.querySelector(".content__products-box");
     
@@ -117,7 +114,6 @@ window.addEventListener("load", function() {
         prevScrollLeft = sliderBox.scrollLeft;
     }
 
-    
     // scrolling images to left according to mouse pointer
     const dragging = (e) => {
         if(!isDragStart) return;
@@ -146,7 +142,6 @@ window.addEventListener("load", function() {
     sliderBox.addEventListener("mouseleave", dragStop); // Khi con trỏ chuột được di chuyển ra khỏi phần tử đó
     sliderBox.addEventListener("touchend", dragStop); // Khi con trỏ chuột được di chuyển ra khỏi phần tử đó trên cảm ứng
     
-    
     // Next and Prev
     
     const arrowIcons = document.querySelectorAll(".content__products-arrow span");
@@ -157,7 +152,6 @@ window.addEventListener("load", function() {
             sliderBox.scrollLeft += icon.id == "slider-left" ? -sliderFirstItemWidth : sliderFirstItemWidth;
         })
     })
-
 
     // const sliderItemWidth = sliderItems[0].offsetWidth;
     // const sliderItemLength = sliderItems.length;
@@ -202,9 +196,7 @@ window.addEventListener("load", function() {
     let getModalClose = document.querySelector(".modal__close");
     let getModalPriceBox = document.querySelector(".modal__price-box");
     let modalProductsSale = document.querySelector(".modal__sale-price");
-    let modalProductsPrime = document.querySelector(".modal__prime-price");
-    
-    
+    let modalProductsPrime = document.querySelector(".modal__prime-price");        
     
         for(let i = 0; i < getModalBtn.length; i++) {
             getModalBtn[i].addEventListener("click", function() {

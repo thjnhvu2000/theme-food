@@ -674,6 +674,11 @@ body {
 .content__products-text {
     text-decoration: none;
     color: #000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    overflow: hidden;
+    width: 90%;
     padding-left: 15px;
 }
 
@@ -777,7 +782,6 @@ body {
 .modal__block {
     position: sticky;
     width: 30vw;
-    height: 20vh;
     border: 4px solid #aaa3a3;
     margin: 0 auto;
     top: 10%;
@@ -1257,7 +1261,6 @@ input[id="sendEmail"] {
         bottom: 0;
         right: 0;
         left: 0;
-        opacity: 0;
         visibility: hidden;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 999;
